@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     font: 1.6rem "Roboto Slab", sans-serif; /* 16px */
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
     color: #222;
