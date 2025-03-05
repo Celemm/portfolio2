@@ -1,0 +1,167 @@
+@import url(./reset.css);
+
+/* theme */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    align-items: center;
+
+    h1{
+        background-color: #222;
+        line-height: 8rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+   nav ul {
+       align-items: center;
+        display: flex;
+        padding-right: 2rem; ;
+
+    }
+
+    nav ul li *{
+        margin-right: 1rem;
+        color: #fff;
+        display: block;
+        text-align: center;
+        /*changement de couleur quand la souris est sur le bouton(survol)  */
+        transition: all .3s ease-in-out;
+    }
+    nav ul li{
+        /*width 15 rem poour augmenter le champs d'action du bouton et augmenter la taille 
+        du survol au passage   */
+        width: 15rem;
+        line-height: 8.5rem;
+        text-transform: uppercase;
+    }
+    /*survol*/
+    nav ul li:hover a{
+        background-color: #42414d;
+        color: #fff;
+    }
+}
+.gallery-content{
+    max-width: 90.0rem;
+    margin: 5rem auto 2rem;
+
+        .gallery-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        
+    }
+    .gallery-grid li img{
+        width: 100%;
+        filter: drop-shadow(0 0 0.9rem #dc143c);
+    }
+}
+picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+article{
+    max-width: 80rem;
+    margin: 0 auto;
+   h2 {
+    width: max-content;
+    padding: .5 rem 1rem;
+    background-color: #222;
+    color: #fff
+    
+    }
+    p{
+        border-top: solid .1rem; #222;
+        padding: 1rem;
+        background-color: #efecec;
+    }
+}
+details summary{
+    background-color: #630404;
+    color: #fff;
+    padding: 1rem;
+    h3 img{
+        filter: invert(100%);
+    }
+}
+details ul li{
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+details ul li:nth-child(2n + 1){
+    background-color: #05bdf0cc;
+    padding: 1rem;
+}
+footer *{
+    text-align: center;
+}
+
+details > summary h3::before{
+    content: " +📁 ";
+    color: #fff;
+  }
+  details[open] > summary h3::before{
+    content: " -📂 ";
+  }
+  /*por la compatibité sur telephone */
+  @media screen and (max-width: 90.0rem) {
+    body{
+        margin:1%.
+    }
+    header{
+        flex-direction: column;
+        h1{
+            font-size: 2rem;
+
+        }
+    }
+    .gallery-content{
+        max-width: 90.0rem;
+        margin: 5rem auto 2rem;
+    
+            .gallery-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            
+        }
+        
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+    
+    
+  }
+  @media screen and (orientation: landscape) {
+    header{
+        flex-direction: row;
+        h1{
+            font-size: 2rem;
+
+        }
+    }
+    
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    
+  }
+}
+details summary{
+    h3{
+     font-size: xx-large;
+    }
+}
