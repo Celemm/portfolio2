@@ -76,7 +76,7 @@ article{
     
     }
     p{
-        border-top: solid .1rem; #222;
+        border-top: solid .1rem #222;
         padding: 1rem;
         background-color: #efecec;
     }
@@ -112,7 +112,7 @@ details > summary h3::before{
   /*por la compatibité sur telephone */
   @media screen and (max-width: 90.0rem) {
     body{
-        margin:1%.
+        margin:1%;
     }
     header{
         flex-direction: column;
